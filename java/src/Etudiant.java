@@ -9,11 +9,13 @@ public class Etudiant extends Utilisateur {
     /**
      * Default constructor
      */
-    public Etudiant() {
+    public Etudiant(String nom, String prenom, String adresse, String mail, String numEtu) {
+        super(nom, prenom, adresse, mail);
+        this.numEtu = numEtu;
     }
 
     /**
-     * 
+     * Attribute
      */
     private String numEtu;
 
@@ -21,7 +23,7 @@ public class Etudiant extends Utilisateur {
 
 
     /**
-     * 
+     * Function
      */
     public void telechargerDevoir() {
         // TODO implement here

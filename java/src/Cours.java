@@ -9,13 +9,11 @@ public class Cours {
     /**
      * Default constructor
      */
-    public Cours() {
+    public Cours(String nom, int semestre) {
+        this.nom = nom;
+        this.semestre = semestre;
     }
 
-    /**
-     * 
-     */
-    public void Port1;
 
     /**
      * 
@@ -26,16 +24,6 @@ public class Cours {
      * 
      */
     private int semestre;
-
-
-
-
-
-
-    /**
-     * 
-     */
-    public Enseignant *;
 
 
 

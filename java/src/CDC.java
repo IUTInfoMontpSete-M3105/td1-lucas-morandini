@@ -11,6 +11,4 @@ public class CDC extends Enseignant {
      */
     public CDC() {
     }
-
-
 }
