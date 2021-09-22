@@ -7,6 +7,8 @@ import java.util.*;
  */
 public class Devoir {
 
+
+
     /**
      * Default constructor
      */
@@ -38,9 +40,7 @@ public class Devoir {
     private int points;
 
 
-
-
-
-
-
+    public void setPoints(int i) {
+        points = i;
+    }
 }

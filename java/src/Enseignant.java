@@ -1,5 +1,4 @@
-
-import java.util.*;
+import java.time.LocalDate;
 
 /**
  * 
@@ -8,8 +7,12 @@ public class Enseignant extends Utilisateur {
 
     /**
      * Default constructor
+     * @param nom
+     * @param prenom
+     * @param adresse
+     * @param mail
      */
-    public Enseignant() {
+    public Enseignant(String nom, String prenom, String adresse, String mail) {
         super(nom, prenom, adresse, mail);
         this.numem = numem;
         this.harpege = harpege;
@@ -34,9 +37,11 @@ public class Enseignant extends Utilisateur {
 
     /**
      * Function
+     * @return
      */
-    public void creerDevoir() {
-        // TODO implement here
+    public Devoir creerDevoir(String nom, String description, LocalDate deadline, int points) {
+        Devoir newDevoir = new Devoir(nom,description,deadline,points);
+        return newDevoir;
     }
 
     /**
@@ -49,15 +54,15 @@ public class Enseignant extends Utilisateur {
     /**
      * Function
      */
-    public void attribuerPoints() {
-        // TODO implement here
+    public void attribuerPoints(Devoir d,int i) {
+        d.setPoints(i);
     }
 
     /**
      * Function
      */
-    public void attribuerAvis() {
-        // TODO implement here
+    public void attribuerAvis(Devoir d,String avis) {
+        d.setAvis = avis;
     }
 
 }
