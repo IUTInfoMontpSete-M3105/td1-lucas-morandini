@@ -2,7 +2,7 @@
 import java.util.*;
 
 /**
- * 
+ *
  */
 public class Cours {
 
@@ -16,23 +16,25 @@ public class Cours {
 
 
     /**
-     * 
+     *
      */
     private String nom;
 
     /**
-     * 
+     *
      */
     private int semestre;
 
+    public String getNom() {
+        return nom;
+    }
 
+    public int getSemestre() {
+        return semestre;
+    }
 
-
-
-
-
-
-
-
-
+    public void delete() {
+        nom = null;
+        this.semestre=0;
+    }
 }

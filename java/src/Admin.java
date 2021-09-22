@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 public class Admin extends Utilisateur {
 
@@ -11,37 +11,35 @@ public class Admin extends Utilisateur {
     }
 
     /**
-     *
      * @return
      */
-    public Cours creerCours(String nom , int semestre) {
-        Cours c = new Cours(nom,semestre);
+    public Cours creerCours(String nom, int semestre) {
+        Cours c = new Cours(nom, semestre);
         return c;
     }
 
     /**
-     * 
+     *
      */
-    public void supprimerCours() {
-        // TODO implement here
+    public void supprimerCours(Cours c) {
+        c.delete();
     }
 
     /**
-     * 
+     *
      */
-    public void affecterChargeDeCours() {
-        // TODO implement here
-    }
-
-    /**
-     * 
-     */
-    public void desaffecterChargeDeCours() {
+    public void affecterChargeDeCours(CDC c,Cours co) {
         // TODO implement here
     }
 
     /**
      *
+     */
+    public void desaffecterChargeDeCours(CDC c,Cours co) {
+        // TODO implement here
+    }
+
+    /**
      * @param e1
      * @param c
      */

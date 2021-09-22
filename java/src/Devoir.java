@@ -3,7 +3,7 @@ import java.time.LocalDate;
 import java.util.*;
 
 /**
- * 
+ *
  */
 public class Devoir {
 
@@ -45,7 +45,7 @@ public class Devoir {
         points = i;
     }
 
-    public void setCorrige(Boolean b){
+    public void setCorrige(Boolean b) {
         this.corrige = b;
     }
 

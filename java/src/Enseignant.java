@@ -1,12 +1,13 @@
 import java.time.LocalDate;
 
 /**
- * 
+ *
  */
 public class Enseignant extends Utilisateur {
 
     /**
      * Default constructor
+     *
      * @param nom
      * @param prenom
      * @param adresse
@@ -37,10 +38,11 @@ public class Enseignant extends Utilisateur {
 
     /**
      * Function
+     *
      * @return
      */
     public Devoir creerDevoir(String nom, String description, LocalDate deadline, int points) {
-        Devoir newDevoir = new Devoir(nom,description,deadline,points);
+        Devoir newDevoir = new Devoir(nom, description, deadline, points);
         return newDevoir;
     }
 
@@ -54,14 +56,14 @@ public class Enseignant extends Utilisateur {
     /**
      * Function
      */
-    public void attribuerPoints(Rendu r,int i) {
+    public void attribuerPoints(Rendu r, int i) {
         r.setPoints(i);
     }
 
     /**
      * Function
      */
-    public void attribuerAvis(Rendu r,String avis) {
+    public void attribuerAvis(Rendu r, String avis) {
         r.setAvis(avis);
     }
 

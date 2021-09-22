@@ -2,7 +2,7 @@
 import java.util.*;
 
 /**
- * 
+ *
  */
 public class Etudiant extends Utilisateur {
 
@@ -18,8 +18,6 @@ public class Etudiant extends Utilisateur {
      * Attribute
      */
     private String numEtu;
-
-
 
 
     /**
