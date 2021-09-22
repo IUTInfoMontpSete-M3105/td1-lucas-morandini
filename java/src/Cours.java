@@ -8,8 +8,10 @@ public class Cours {
 
     /**
      * Default constructor
+     * @param nom
+     * @param semestre
      */
-    public Cours() {
+    public Cours(String nom, int semestre) {
     }
 
     /**
@@ -20,7 +22,7 @@ public class Cours {
     /**
      * 
      */
-    public Int semestre;
+    public int semestre;
 
 
 
