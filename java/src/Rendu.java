@@ -8,6 +8,8 @@ import java.util.*;
  */
 public class Rendu {
 
+
+    private String avis;
     /**
      * Default constructor
      */
@@ -15,7 +17,7 @@ public class Rendu {
         this.doc = doc;
         this.date = date;
         this.points = points;
-
+        this.avis = "";
     }
 
     /**
@@ -33,8 +35,35 @@ public class Rendu {
      */
     private int points;
 
+    public File getDoc() {
+        return doc;
+    }
 
+    public void setDoc(File doc) {
+        this.doc = doc;
+    }
 
+    public LocalDate getDate() {
+        return date;
+    }
 
+    public void setDate(LocalDate date) {
+        this.date = date;
+    }
 
+    public int getPoints() {
+        return points;
+    }
+
+    public void setPoints(int points) {
+        this.points = points;
+    }
+
+    public String getAvis() {
+        return avis;
+    }
+
+    public void setAvis(String avis) {
+        this.avis = avis;
+    }
 }

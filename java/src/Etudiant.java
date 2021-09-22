@@ -25,8 +25,8 @@ public class Etudiant extends Utilisateur {
     /**
      * Function
      */
-    public void telechargerDevoir() {
-        // TODO implement here
+    public void telechargerDevoir(Devoir d) {
+        d.toString();
     }
 
 }

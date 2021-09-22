@@ -7,7 +7,7 @@ import java.util.*;
  */
 public class Devoir {
 
-
+    private boolean corrige;
 
     /**
      * Default constructor
@@ -17,6 +17,7 @@ public class Devoir {
         this.description = description;
         this.deadline = deadline;
         this.points = points;
+        this.corrige = false;
     }
 
     /**
@@ -42,5 +43,20 @@ public class Devoir {
 
     public void setPoints(int i) {
         points = i;
+    }
+
+    public void setCorrige(Boolean b){
+        this.corrige = b;
+    }
+
+    @Override
+    public String toString() {
+        return "Devoir{" +
+                "corrige=" + corrige +
+                ", nom='" + nom + '\'' +
+                ", description='" + description + '\'' +
+                ", deadline=" + deadline +
+                ", points=" + points +
+                '}';
     }
 }

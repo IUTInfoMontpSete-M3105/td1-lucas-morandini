@@ -47,22 +47,22 @@ public class Enseignant extends Utilisateur {
     /**
      * Function
      */
-    public void corrigerDevoir() {
-        // TODO implement here
+    public void corrigerDevoir(Devoir d) {
+        d.setCorrige(true);
     }
 
     /**
      * Function
      */
-    public void attribuerPoints(Devoir d,int i) {
-        d.setPoints(i);
+    public void attribuerPoints(Rendu r,int i) {
+        r.setPoints(i);
     }
 
     /**
      * Function
      */
-    public void attribuerAvis(Devoir d,String avis) {
-        d.setAvis = avis;
+    public void attribuerAvis(Rendu r,String avis) {
+        r.setAvis(avis);
     }
 
 }

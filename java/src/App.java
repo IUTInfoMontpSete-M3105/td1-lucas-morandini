@@ -9,8 +9,9 @@ public class App {
         Enseignant e2 = new Enseignant("","","","");
         Etudiant etu1 = new Etudiant("","","","","ETU1");
         Etudiant etu2 = new Etudiant("","","","","ETU2");
+        Cours c = admin1.creerCours("Anglais",1);
 
         Devoir nouveau = e1.creerDevoir("","",LocalDate.EPOCH,0);
-
+        admin1.affecterEnseignant(e1,c);
     }
 }

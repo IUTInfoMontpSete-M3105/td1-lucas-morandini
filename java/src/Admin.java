@@ -1,6 +1,3 @@
-
-import java.util.*;
-
 /**
  * 
  */
@@ -14,10 +11,12 @@ public class Admin extends Utilisateur {
     }
 
     /**
-     * 
+     *
+     * @return
      */
-    public void creerCours() {
-        // TODO implement here
+    public Cours creerCours(String nom , int semestre) {
+        Cours c = new Cours(nom,semestre);
+        return c;
     }
 
     /**
@@ -42,9 +41,11 @@ public class Admin extends Utilisateur {
     }
 
     /**
-     * 
+     *
+     * @param e1
+     * @param c
      */
-    public void affecterEnseignant() {
+    public void affecterEnseignant(Enseignant e1, Cours c) {
         // TODO implement here
     }
 
